@@ -15,7 +15,7 @@ namespace MorseEvent
         private string[] Text2;
         private string[] Text1;
         private static string word;
-        private static int dTPoint = 200;                               //Длительность одной точки
+        private static int dTPoint = 150;                               //Длительность одной точки
         private static long DownTime = 0;                               //Время нажатия кнопки
         private static long UpTime = 0;                                 //Время отпускания кнопки
 
@@ -30,7 +30,7 @@ namespace MorseEvent
 
         public ButtonEvents KeyDownEvent = KeyDownFunction;             //Публичный делегат события нажатия кнопки
         public ButtonEvents KeyUpEvent = KeyUpFunction;                 //Публичный делегат события отпускания кнопки
-        public static StringOut stringOut;          //Для вывода букв привязали Консоль
+        public static StringOut stringOut;                              //Для вывода букв привязали Консоль
 
         #region Dictionary AlphabetTable
         private static Dictionary<string, char> AlphabetTable = new Dictionary<string, char>
@@ -82,7 +82,7 @@ namespace MorseEvent
                 KeyPressedFlag = true;
                 DownTime = DateTime.Now.Ticks/10000;                    //Получили время в миллисекундах     
                 dT1 = DownTime - UpTime;                                //Расчитали время не нажатого состояния кнопки
-                decipherPause(dT1);                
+                decipherPause(dT1);
             }            
         }
 
@@ -103,12 +103,12 @@ namespace MorseEvent
             {
                 if (dT >= 0 && dT < dTPoint * 1.1)                      //Если разность времени не превышает длятельность одной точки
                 {                                                       //То это точка
-                    //stringOut(".");
+                    stringOut(".");
                     word += ".";
-                }
-                if (dT > 3 * dTPoint * 0.9)                             //Если разность времени превышает время длительности трех точек
+                }                
+                if (dT >= dTPoint * 3)                                  //Если разность времени превышает время длительности трех точек
                 {                                                       //То это тире
-                    //stringOut("_");
+                    stringOut("_");
                     word += "_";
                 }
             }
@@ -120,14 +120,18 @@ namespace MorseEvent
             {                                                           //То это промежуток между знаками
                 //stringOut("");
             }
-            if (dT > 3 * dTPoint * 0.9)                                 //Если длительность не нажатого состояния не превышает длительность трех точек
-            {                                                           //То это промежуток между буквами
-                //stringOut(" ");
-                MorseConvertToLetter(word);
-                word = "";
+            if (dT > 3 * dTPoint * 0.9)       //Если длительность не нажатого состояния превышает длительность трех точек
+            {                                                           //То это промежуток между буквами                
+                MorseConvertToLetter(word);                             //Как только мы поняли что временная пауза является паузой между буквами, то 
+                word = "";                                              //передаем последовательность точек и тире в метод для преобразования в букву и обнуляем строку для приема
             }
-            //if (dT > 7 * dTPoint * 0.9)                                 //Если длительность ненажатого состояния не превышает длительности семи точек
-            //{                                                           //То это промежуток мужду словами
+            //if (dT > 3 * dTPoint * 0.9 && dT < 7 * dTPoint * 0.9)       //Если длительность не нажатого состояния превышает длительность трех точек
+            //{                                                           //То это промежуток между буквами                
+            //    MorseConvertToLetter(word);                             //Как только мы поняли что временная пауза является паузой между буквами, то 
+            //    word = "";                                              //передаем последовательность точек и тире в метод для преобразования в букву и обнуляем строку для приема
+            //}
+            //if (dT > 7 * dTPoint * 0.9)                               //Если длительность ненажатого состояния превышает длительности семи точек
+            //{                                                         //То это промежуток между словами
             //    stringOut(" ");
             //    MorseConvertToLetter(word);
             //    word = "";
@@ -137,11 +141,11 @@ namespace MorseEvent
         public static void MorseConvertToLetter(string str)             //Преобразуем текст в символ согласно таблице
         {
             char symb;
-            stringOut(str);
-            if (AlphabetTable.ContainsKey(str))
+            //stringOut(str);                                             //Выведем нашу последовательность 
+            if (AlphabetTable.ContainsKey(str))                         //Если список содержит данную последовательность, то
             {
                 AlphabetTable.TryGetValue(str, out symb);               //В symb записывается символ из dictionary
-                stringOut(symb.ToString());                             //Вывод символа
+                stringOut(symb.ToString() + "\n");                             //Вывод символа
             }            
         }
 

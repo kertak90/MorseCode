@@ -23,7 +23,12 @@ namespace MorseEvent
         private void button1_KeyDown(object sender, KeyEventArgs e)
         {           
             MorseController.KeyDownEvent(sender, e);
-            Morse.stringOut = Console.WriteLine;
+            //Morse.stringOut = Console.Write;
+            Morse.stringOut = ShowMorse;
+        }
+        private void ShowMorse(string str)
+        {
+            textBox.AppendText(str);
         }
 
         private void button1_KeyPress(object sender, KeyPressEventArgs e)
