@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorseCodeToFile", "MorseCodeToFile\MorseCodeToFile.csproj", "{7A4A88BE-6B84-4B7A-8E4B-F3C4578072D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonTest", "ButtonTest\ButtonTest.csproj", "{141FBBF9-885F-4495-8812-62C3592582E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A4A88BE-6B84-4B7A-8E4B-F3C4578072D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4A88BE-6B84-4B7A-8E4B-F3C4578072D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4A88BE-6B84-4B7A-8E4B-F3C4578072D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4A88BE-6B84-4B7A-8E4B-F3C4578072D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{141FBBF9-885F-4495-8812-62C3592582E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{141FBBF9-885F-4495-8812-62C3592582E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{141FBBF9-885F-4495-8812-62C3592582E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{141FBBF9-885F-4495-8812-62C3592582E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F333B0AA-E837-4837-A8A2-FDBA43CC8F37}
+	EndGlobalSection
+EndGlobal

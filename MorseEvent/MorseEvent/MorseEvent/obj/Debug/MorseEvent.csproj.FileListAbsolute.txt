@@ -1,0 +1,10 @@
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\bin\Debug\MorseEvent.exe.config
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\bin\Debug\MorseEvent.exe
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\bin\Debug\MorseEvent.pdb
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\obj\Debug\MorseEvent.csprojResolveAssemblyReference.cache
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\obj\Debug\MorseEvent.Form1.resources
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\obj\Debug\MorseEvent.Properties.Resources.resources
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\obj\Debug\MorseEvent.csproj.GenerateResource.cache
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\obj\Debug\MorseEvent.csproj.CoreCompileInputs.cache
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\obj\Debug\MorseEvent.exe
+D:\C# projects\Morse\MorseEvent\MorseEvent\MorseEvent\obj\Debug\MorseEvent.pdb

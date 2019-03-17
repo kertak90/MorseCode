@@ -1,0 +1,6 @@
+H:\C# projects\Morse\MorseCodeToFile\ButtonTest\bin\Debug\ButtonTest.exe.config
+H:\C# projects\Morse\MorseCodeToFile\ButtonTest\bin\Debug\ButtonTest.exe
+H:\C# projects\Morse\MorseCodeToFile\ButtonTest\bin\Debug\ButtonTest.pdb
+H:\C# projects\Morse\MorseCodeToFile\ButtonTest\obj\Debug\ButtonTest.csproj.CoreCompileInputs.cache
+H:\C# projects\Morse\MorseCodeToFile\ButtonTest\obj\Debug\ButtonTest.exe
+H:\C# projects\Morse\MorseCodeToFile\ButtonTest\obj\Debug\ButtonTest.pdb

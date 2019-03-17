@@ -1,0 +1,9 @@
+H:\C# projects\Morse\MorseCodeToFile\MorseCodeToFile\bin\Debug\MorseCodeToFile.exe.config
+H:\C# projects\Morse\MorseCodeToFile\MorseCodeToFile\bin\Debug\MorseCodeToFile.exe
+H:\C# projects\Morse\MorseCodeToFile\MorseCodeToFile\bin\Debug\MorseCodeToFile.pdb
+H:\C# projects\Morse\MorseCodeToFile\MorseCodeToFile\obj\Debug\MorseCodeToFile.csprojResolveAssemblyReference.cache
+H:\C# projects\Morse\MorseCodeToFile\MorseCodeToFile\obj\Debug\MorseCodeToFile.csproj.CoreCompileInputs.cache
+H:\C# projects\Morse\MorseCodeToFile\MorseCodeToFile\obj\Debug\MorseCodeToFile.exe
+H:\C# projects\Morse\MorseCodeToFile\MorseCodeToFile\obj\Debug\MorseCodeToFile.pdb
+H:\C# projects\Morse\MorseCodeToFile\MorseCodeToFile\bin\Debug\NAudio.dll
+H:\C# projects\Morse\MorseCodeToFile\MorseCodeToFile\bin\Debug\NAudio.xml
